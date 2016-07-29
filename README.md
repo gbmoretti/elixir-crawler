@@ -1,6 +1,9 @@
 # Crawler
 
-**TODO: Add description**
+##TODO:
+- [ ] Use headless browser to do a better crawl in sites with JS
+- [ ] Tests
+- [ ] Write a better README
 
 ## Installation
 
@@ -21,4 +24,3 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
       [applications: [:crawler]]
     end
     ```
-
