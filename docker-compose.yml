@@ -2,7 +2,6 @@ version: '2'
 services:
   crawler:
     build: .
-    command: bash
     volumes:
       - .:/code
     dns: 8.8.8.8 #fix due to a bug (https://forums.docker.com/t/intermittent-dns-resolving-issues/9584/19)
