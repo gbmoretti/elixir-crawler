@@ -1,4 +1,5 @@
 FROM elixir:latest
-ADD . /code
+ENV MIX_ARCHIVES /code/.mix/archives
+COPY . /code
 WORKDIR /code
-CMD ["bash"]
+CMD ["iex", "-S", "mix"]
