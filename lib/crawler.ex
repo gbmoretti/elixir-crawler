@@ -11,6 +11,6 @@ defmodule Crawler do
   end
   def get_page(url, attributes) when not is_list(url) do
     html = crawl(url)
-    Enum.map(attributes, fn attr -> Floki.find(html, attr) |> Floki.text end)
+    Enum.map(attributes,&elements(html, &1))
   end
 end
